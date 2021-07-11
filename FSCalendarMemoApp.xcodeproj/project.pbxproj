@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1439B9E466E4930D685C370D /* Pods_FSCalendarMemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C322BDB8ACBB48FD60D939 /* Pods_FSCalendarMemoApp.framework */; };
 		54D33BE9269AD6BE004312B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33BE8269AD6BE004312B1 /* AppDelegate.swift */; };
 		54D33BEB269AD6BE004312B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33BEA269AD6BE004312B1 /* SceneDelegate.swift */; };
 		54D33BED269AD6BE004312B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33BEC269AD6BE004312B1 /* ViewController.swift */; };
 		54D33BF0269AD6BE004312B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D33BEE269AD6BE004312B1 /* Main.storyboard */; };
 		54D33BF2269AD6C2004312B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D33BF1269AD6C2004312B1 /* Assets.xcassets */; };
 		54D33BF5269AD6C2004312B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D33BF3269AD6C2004312B1 /* LaunchScreen.storyboard */; };
+		54D33C00269AD770004312B1 /* RealmDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33BFF269AD770004312B1 /* RealmDatas.swift */; };
+		54D33C02269AD8A9004312B1 /* RealmCRUDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33C01269AD8A9004312B1 /* RealmCRUDModel.swift */; };
+		54D33C04269AE8EC004312B1 /* tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33C03269AE8EC004312B1 /* tableView.swift */; };
+		54D33C06269AE8F7004312B1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33C05269AE8F7004312B1 /* Alert.swift */; };
+		54D33C08269AE907004312B1 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33C07269AE907004312B1 /* Calendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09C322BDB8ACBB48FD60D939 /* Pods_FSCalendarMemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCalendarMemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37235AF53DB40603EEC144C1 /* Pods-FSCalendarMemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendarMemoApp.release.xcconfig"; path = "Target Support Files/Pods-FSCalendarMemoApp/Pods-FSCalendarMemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		54D33BE5269AD6BE004312B1 /* FSCalendarMemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSCalendarMemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D33BE8269AD6BE004312B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54D33BEA269AD6BE004312B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		54D33BF1269AD6C2004312B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54D33BF4269AD6C2004312B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54D33BF6269AD6C2004312B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D33BFF269AD770004312B1 /* RealmDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatas.swift; sourceTree = "<group>"; };
+		54D33C01269AD8A9004312B1 /* RealmCRUDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCRUDModel.swift; sourceTree = "<group>"; };
+		54D33C03269AE8EC004312B1 /* tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableView.swift; sourceTree = "<group>"; };
+		54D33C05269AE8F7004312B1 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		54D33C07269AE907004312B1 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		8A3A593774A63B06BEC31FB4 /* Pods-FSCalendarMemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCalendarMemoApp.debug.xcconfig"; path = "Target Support Files/Pods-FSCalendarMemoApp/Pods-FSCalendarMemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1439B9E466E4930D685C370D /* Pods_FSCalendarMemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0929130BD982F325FBABFECF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C322BDB8ACBB48FD60D939 /* Pods_FSCalendarMemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54D33BDC269AD6BE004312B1 = {
 			isa = PBXGroup;
 			children = (
 				54D33BE7269AD6BE004312B1 /* FSCalendarMemoApp */,
 				54D33BE6269AD6BE004312B1 /* Products */,
+				F6F5DCE197404AE93F4AA6EB /* Pods */,
+				0929130BD982F325FBABFECF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +83,51 @@
 			children = (
 				54D33BE8269AD6BE004312B1 /* AppDelegate.swift */,
 				54D33BEA269AD6BE004312B1 /* SceneDelegate.swift */,
-				54D33BEC269AD6BE004312B1 /* ViewController.swift */,
-				54D33BEE269AD6BE004312B1 /* Main.storyboard */,
-				54D33BF1269AD6C2004312B1 /* Assets.xcassets */,
+				54D33BFE269AD73A004312B1 /* Model */,
+				54D33BFD269AD733004312B1 /* View */,
+				54D33BFC269AD72B004312B1 /* Controoler */,
 				54D33BF3269AD6C2004312B1 /* LaunchScreen.storyboard */,
 				54D33BF6269AD6C2004312B1 /* Info.plist */,
 			);
 			path = FSCalendarMemoApp;
+			sourceTree = "<group>";
+		};
+		54D33BFC269AD72B004312B1 /* Controoler */ = {
+			isa = PBXGroup;
+			children = (
+				54D33BEC269AD6BE004312B1 /* ViewController.swift */,
+			);
+			path = Controoler;
+			sourceTree = "<group>";
+		};
+		54D33BFD269AD733004312B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54D33BEE269AD6BE004312B1 /* Main.storyboard */,
+				54D33BF1269AD6C2004312B1 /* Assets.xcassets */,
+				54D33C03269AE8EC004312B1 /* tableView.swift */,
+				54D33C05269AE8F7004312B1 /* Alert.swift */,
+				54D33C07269AE907004312B1 /* Calendar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54D33BFE269AD73A004312B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54D33BFF269AD770004312B1 /* RealmDatas.swift */,
+				54D33C01269AD8A9004312B1 /* RealmCRUDModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6F5DCE197404AE93F4AA6EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A3A593774A63B06BEC31FB4 /* Pods-FSCalendarMemoApp.debug.xcconfig */,
+				37235AF53DB40603EEC144C1 /* Pods-FSCalendarMemoApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54D33BF9269AD6C2004312B1 /* Build configuration list for PBXNativeTarget "FSCalendarMemoApp" */;
 			buildPhases = (
+				A0515A9D54B3858B63A7C3E1 /* [CP] Check Pods Manifest.lock */,
 				54D33BE1269AD6BE004312B1 /* Sources */,
 				54D33BE2269AD6BE004312B1 /* Frameworks */,
 				54D33BE3269AD6BE004312B1 /* Resources */,
+				B77BD554DDA033CC2FB69663 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +197,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0515A9D54B3858B63A7C3E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSCalendarMemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77BD554DDA033CC2FB69663 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSCalendarMemoApp/Pods-FSCalendarMemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSCalendarMemoApp/Pods-FSCalendarMemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSCalendarMemoApp/Pods-FSCalendarMemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54D33BE1269AD6BE004312B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				54D33BED269AD6BE004312B1 /* ViewController.swift in Sources */,
+				54D33C00269AD770004312B1 /* RealmDatas.swift in Sources */,
 				54D33BE9269AD6BE004312B1 /* AppDelegate.swift in Sources */,
+				54D33C08269AE907004312B1 /* Calendar.swift in Sources */,
 				54D33BEB269AD6BE004312B1 /* SceneDelegate.swift in Sources */,
+				54D33C02269AD8A9004312B1 /* RealmCRUDModel.swift in Sources */,
+				54D33C04269AE8EC004312B1 /* tableView.swift in Sources */,
+				54D33C06269AE8F7004312B1 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +395,7 @@
 		};
 		54D33BFA269AD6C2004312B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3A593774A63B06BEC31FB4 /* Pods-FSCalendarMemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +414,7 @@
 		};
 		54D33BFB269AD6C2004312B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37235AF53DB40603EEC144C1 /* Pods-FSCalendarMemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
