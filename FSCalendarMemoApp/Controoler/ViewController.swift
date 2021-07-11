@@ -45,6 +45,7 @@ class ViewController: UIViewController {
             
             //self.modeChangeButton.titleLabel?.text = "予定を追加可能にする"
             self.modeChangeButton.setTitle("予定を追加可能にする", for: .normal)
+            self.modeChangeButton.backgroundColor = .red
             UserDefaults.standard.set("見るだけ", forKey: "addORLook")
             print("見るだけにした")
             
@@ -52,6 +53,7 @@ class ViewController: UIViewController {
             
             //self.modeChangeButton.titleLabel?.text = "閲覧のみ状態にする"
             self.modeChangeButton.setTitle("閲覧のみ状態にする", for: .normal)
+            self.modeChangeButton.backgroundColor = .systemTeal
             UserDefaults.standard.set("追加", forKey: "addORLook")
             print("追加にした")
         }
